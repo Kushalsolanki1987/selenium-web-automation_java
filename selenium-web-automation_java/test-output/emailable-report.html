@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Web Automation</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">42,201</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Web Automation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">ui.TestExecutable</td><td><a href="#m0">verifyDeleteEmployeeDetails</a></td><td rowspan="1">1580588701398</td><td rowspan="1">6663</td></tr><tr class="failedeven"><td><a href="#m1">verifySuccessfulLogout</a></td><td rowspan="1">1580588672781</td><td rowspan="1">3574</td></tr><tr><th colspan="4">Web Automation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">ui.TestExecutable</td><td><a href="#m2">verifyCreateEmployeeDeatils</a></td><td rowspan="1">1580588682869</td><td rowspan="1">5499</td></tr><tr class="passedeven"><td><a href="#m3">verifySuccessfulLogin</a></td><td rowspan="1">1580588668338</td><td rowspan="1">2541</td></tr><tr class="passedeven"><td><a href="#m4">verifyUnuccessfulLogin</a></td><td rowspan="1">1580588678318</td><td rowspan="1">2600</td></tr><tr class="passedeven"><td><a href="#m5">verifyUpdateEmployeeDetails</a></td><td rowspan="1">1580588690301</td><td rowspan="1">9160</td></tr></tbody>
+</table>
+<h2>Web Automation</h2><h3 id="m0">ui.TestExecutable#verifyDeleteEmployeeDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Luke</td><td>Skywalker</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Are you sure you want to delete Test1 Automation1?}
+  (Session info: chrome=79.0.3945.130): Are you sure you want to delete Test1 Automation1?
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NLMB5716-C35910&apos;, ip: &apos;fe80:0:0:0:1c4e:b7fa:8dfc:bdaf%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/2s/w6_tbkls6pj...}, goog:chromeOptions: {debuggerAddress: localhost:64793}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bdef2937e9bb5641df62366ac2a00d53
+*** Element info: {Using=id, value=greetings}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at common.SystemLogin.clickLogoutButton(SystemLogin.java:75)
+	at ui.TestExecutable.verifyDeleteEmployeeDetails(TestExecutable.java:127)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ui.TestExecutable#verifySuccessfulLogout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Luke</td><td>Skywalker</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;p id=&quot;greetings&quot; class=&quot;ng-binding&quot;&gt;...&lt;/p&gt; is not clickable at point (680, 246). Other element would receive the click: &lt;div class=&quot;main-view-wrapper ng-animate main-view-wrapper-employees&quot; ng-class=&quot;{login:&apos;main-view-wrapper-loggedIn&apos;,
+      employees:&apos;main-view-wrapper-employees&apos;,
+      edit:&apos;main-view-wrapper-edit&apos;,
+      create:&apos;main-view-wrapper-create&apos;}[viewState.current]&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=79.0.3945.130)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NLMB5716-C35910&apos;, ip: &apos;fe80:0:0:0:1c4e:b7fa:8dfc:bdaf%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/2s/w6_tbkls6pj...}, goog:chromeOptions: {debuggerAddress: localhost:64562}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ec2ed5658cbebd8db2bf95e1e251fef6
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at common.SystemLogin.clickLogoutButton(SystemLogin.java:75)
+	at ui.TestExecutable.verifySuccessfulLogout(TestExecutable.java:73)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ui.TestExecutable#verifyCreateEmployeeDeatils</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>Luke</td><td>Skywalker</td><td>Kush</td><td>Solan</td><td>1998-01-01</td><td>test@mail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ui.TestExecutable#verifySuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Luke</td><td>Skywalker</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ui.TestExecutable#verifyUnuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Luke1</td><td>Skywalker1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ui.TestExecutable#verifyUpdateEmployeeDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Luke</td><td>Skywalker</td><td>Kush_update</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
