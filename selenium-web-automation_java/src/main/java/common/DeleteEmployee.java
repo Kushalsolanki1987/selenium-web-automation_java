@@ -1,14 +1,12 @@
 package common;
 
 import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class DeleteEmployee {
 
-	WebDriver driver;
 
 	@FindBy(id = "bDelete")
 	private WebElement clickDeleteButton;
@@ -18,20 +16,14 @@ public class DeleteEmployee {
 	
 	/**
 	 * Submit confirm button pop up
+	 * @param driver2 
 	 */
 
-	public void submitConfirmButton() throws InterruptedException {
+	public void submitConfirmButton(WebDriver driver) throws InterruptedException {
+		
+		TimeUnit.SECONDS.sleep(1);
+		driver.switchTo().alert().accept();
 
-		TimeUnit.SECONDS.sleep(2);
-
-		try{
-		} catch (Exception e) {
-		if(e.toString().contains("org.openqa.selenium.UnhandledAlertException"))
-		 {
-		    Alert alert = driver.switchTo().alert();
-		    alert.accept();
-		 }
-		}
 
 	}
 

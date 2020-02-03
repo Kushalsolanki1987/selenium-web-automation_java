@@ -119,7 +119,7 @@ class TestExecutable {
 		login.clickLoginButton();
 		update.selectEmployee();
 		delete.clickDeleteButton();
-		delete.submitConfirmButton();
+		delete.submitConfirmButton(driver);
 		login.clickLogoutButton();
 		softAssert.assertEquals(login.verifySucessfullLogout(), true);
 		
