@@ -1,8 +1,6 @@
-**
-
 ## Web-automation automated test cases
 
-**
+
 
 **Developed by Kushal Solanki**
 
