@@ -75,8 +75,7 @@ public class SystemLogin {
 	
 	public void clickLogoutButton() throws InterruptedException{
 		TimeUnit.SECONDS.sleep(2);
-
-		clickLogoutButton.click();
+        clickLogoutButton.click();
 
 	}
 
@@ -88,6 +87,10 @@ public class SystemLogin {
 		return verifyLogin.getText();
 
 	}
+	
+	/**
+	 * Verify if the login button is displayed again after logout
+	 */
 
 	public boolean verifySucessfullLogout()  {
 		return clickLoginButton.isDisplayed();
