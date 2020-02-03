@@ -25,7 +25,7 @@ public class SystemLogin {
 	@FindBy(xpath = "//p[text()='Invalid username or password!']")
 	private WebElement invalidCredentials;
 
-	@FindBy(id = "greetings")
+	@FindBy(css = "p[class='main-button']")
 	private WebElement clickLogoutButton;
 
 	@FindBy(xpath = "//p[contains(text(),'Hello Luke')]")
@@ -69,9 +69,13 @@ public class SystemLogin {
 
 	/**
 	 * Logout by clicking on Logout button
+	 * @throws InterruptedException 
 	 */
 
-	public void clickLogoutButton(){
+	
+	public void clickLogoutButton() throws InterruptedException{
+		TimeUnit.SECONDS.sleep(2);
+
 		clickLogoutButton.click();
 
 	}
