@@ -30,7 +30,7 @@ class TestExecutable {
 		if (System.getProperty("os.name").toLowerCase().contains("mac")) {
 			System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
 		} else {
-			System.setProperty("webdriver.chrome.driver", "resources/geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
 		}
 		driver = new ChromeDriver();
 		baseUrl = "http://cafetownsend-angular-rails.herokuapp.com/employees";
